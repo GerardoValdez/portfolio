@@ -1,0 +1,48 @@
+$(document).ready(function () {
+  $("#enviar").click(function () {
+    if ($("#formulario-registro").valid()) {
+      alert("¡Mensaje Enviado!");
+    } else {
+      alert("Hubo un problema");
+    }
+  });
+
+  $("#formularioContacto").validate({
+   
+    rules: {
+
+      nombre: {
+        required: true,
+      },
+      correo: {
+        required: true,
+        email: true,
+      },
+      mensaje:{
+        required: true,
+      }
+    },
+    messages: {
+      nombre: {
+        required: "El nombre es requerido.",
+      },
+      correo: {
+        required: "El mail es requerido.",
+        email: "El correo no es válido.",
+      },
+      mensaje:{
+        required:"El mensaje es requerido." ,
+      }
+
+    },
+    errorClass: "is-invalid", //le agrego esa clase cuando salta hay error
+    validClass: "is-valid", // le agrego esa clase cuando esta correcto
+
+    errorPlacement: function(error, element) {
+        // coloca el mensaje de error en rojo
+        error.addClass("text-danger");
+        error.insertAfter(element);
+    }
+    
+  });
+});

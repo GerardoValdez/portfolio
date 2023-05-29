@@ -1,0 +1,123 @@
+p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #a7a7a7;
+    padding-top: 3%;   
+}
+
+li{
+    color: #a7a7a7;
+    
+
+}
+
+h2{
+    color: #304f45;
+}
+
+label{
+    color: #a7a7a7;
+
+}
+
+.custom-input {
+    border-color: #a7a7a7;
+    color: #a7a7a7 !important;  
+}
+
+.custom-input:focus {
+    border-color: #304f45;
+    box-shadow: 0 0 0 0.25rem rgba(48, 79, 69, 0.5);
+}
+
+.custom-btn{
+    background-color: #304f45;
+    border: #a7a7a7;
+    color: #a7a7a7 !important;
+}
+
+.custom-btn:hover{
+    background-color: #1F4639;
+}
+
+.custom-btn:active {
+    background-color: #2E6A56 !important;
+}
+
+.tec{
+    margin-bottom: 10%;
+}
+
+.icon{
+    width: 50px !important;
+    height: 50px !important;
+    vertical-align: middle !important;
+}
+
+.card{
+    background-color: #121314;
+    border: 2px solid #304f45
+} 
+
+.card-title{
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-group{
+    padding-top: 2%;
+}
+
+.i-custom{
+    padding-left: 60%;
+}
+
+.i-custom:hover{
+    color: #1F4639 !important;
+}
+
+.i-custom:active{
+    color: #2E6A56 !important;
+}
+
+
+
+
+@media(max-width: 767px){
+   
+    
+    .img-custom{
+        margin-top: 20% !important;
+    }
+
+    p{text-align:left;}
+
+    .card-custom{
+        margin-bottom: 5%;
+    }
+
+    #redes{
+        padding-top: 10% !important;
+        
+    }
+
+    #enviar{
+        padding-top: 5% !important;
+    }
+    
+    .i-custom{
+        font-size: 2rem;   
+      
+    }
+
+    @media (hover: none) {
+        /* Estilos para el estado :active en dispositivos móviles */
+        .custom-btn:active {
+          background-color: #2E6A56 !important;
+        }
+      
+        .i-custom:active {
+          color: #2E6A56 !important;
+        }
+    }
+}
